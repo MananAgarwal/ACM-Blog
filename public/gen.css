@@ -5,18 +5,30 @@ html,body{
   background-color: #ffffff;
 }
 
-img{
-  max-width: 100%;
-}
-
 div{
   display: block;
 }
 
+img{
+  max-width: 100%;
+}
+
+ul{
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li{
+  display:inline-block !important;
+  padding: 5px 13px ;
+}
+
 .navbar li a{
-  font-family: 'Open Sans',helvetica,arial,sans-serif;
-  font-weight: 600;
-  letter-spacing: 1px;
+  font: 400 21px/1.8 Lato, sans-serif;
+  color: #3bcce4;
   text-transform: uppercase;
-  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
 }

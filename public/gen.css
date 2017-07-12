@@ -1,0 +1,22 @@
+html,body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #ffffff;
+}
+
+img{
+  max-width: 100%;
+}
+
+div{
+  display: block;
+}
+
+.navbar li a{
+  font-family: 'Open Sans',helvetica,arial,sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+}

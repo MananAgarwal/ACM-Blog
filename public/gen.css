@@ -3,6 +3,13 @@ html,body,section{
   padding: 0;
   border: 0;
   background-color: #ffffff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 100%;
+
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
 }
 
 div{
@@ -43,6 +50,95 @@ ul{
   border-top: 6px solid #3bcce4;
 }
 
+.post-info{
+  background:#fff;
+  padding:1.5em;
+}
+
+.post-info h4{
+  color:#afafaf;
+  font-family: 'Lato', sans-serif;
+  font-size:0.8em;
+  margin-bottom:1em;
+}
+.post-info h4 a{
+  font-size:1.7em;
+  color:#3bcce4;
+  margin-right:0.7em;
+  display:inline-block;
+  text-decoration:none;
+  font-family: 'Oswald', sans-serif;
+  font-weight:400;
+}
+.post-info h4 a:hover{
+  color: #4a5054;
+}
+.post-info p{
+  font-family: 'Lato', sans-serif;
+  color:#9a9da0;
+  font-size:0.9em;
+  line-height:1.5em;
+  margin-bottom:1em;
+}
+.post-info a span {
+  background: url("../images/arrow.png") no-repeat 0px 3px;
+  height: 18px;
+  width: 15px;
+  display: inline-block;
+  margin-right: 7px;
+}
+.post-info a {
+  color: #626465;
+  font-weight: 400;
+  font-size: 1em;
+  display: inline-block;
+  text-decoration: none;
+}
+.post-info a:hover{
+  color:#3bcce4;
+}
+
+.content-grid-info{
+  z-index: 0;
+  width:65%;
+  margin: auto;
+  position: relative;
+  margin-bottom: 3em;
+}
+
+/*-----Shadow effect-----*/
+.post-info:before, .post-info:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.post-info:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+/*----------*/
+
 #banner{
   height: 23em;
   background-image: url("../images/banner 5.jpg");
@@ -50,6 +146,7 @@ ul{
   background-position: center;
   text-align: center;
   position: relative;
+  margin-bottom: 2.5em;
 }
 
 #wrapper{

@@ -33,11 +33,11 @@ ul{
 
 .navbar li{
   display:inline-block !important;
-  padding: 10px 18px ;
+  padding: 9px 18px ;
 }
 
 .navbar li a{
-  font: 300 19px/1.8 Lato, sans-serif;
+  font: 300 17px/1.8 Lato, sans-serif;
   color: #fff;
   text-decoration: none;
   cursor: default;
@@ -46,7 +46,13 @@ ul{
 
 .navbar li a:hover{
   color: #3bcce4;
-  padding-top: 11px;
+  padding-top: 9px;
+  border-top: 6px solid #3bcce4;
+}
+
+.navbar .active a{
+  color: #3bcce4;
+  padding-top: 9px;
   border-top: 6px solid #3bcce4;
 }
 
@@ -62,11 +68,12 @@ ul{
   margin-bottom:1em;
 }
 .post-info h4 a{
-  font-size:1.7em;
+  font-size:2em;
   color:#3bcce4;
   margin-right:0.7em;
   display:inline-block;
   text-decoration:none;
+  text-transform: uppercase;;
   font-family: 'Oswald', sans-serif;
   font-weight:400;
 }
@@ -75,8 +82,8 @@ ul{
 }
 .post-info p{
   font-family: 'Lato', sans-serif;
-  color:#9a9da0;
-  font-size:0.9em;
+  color:#777;
+  font-size:1em;
   line-height:1.5em;
   margin-bottom:1em;
 }
@@ -100,7 +107,7 @@ ul{
 
 .content-grid-info{
   z-index: 0;
-  width:65%;
+  width:70%;
   margin: auto;
   position: relative;
   margin-bottom: 3em;
@@ -139,8 +146,67 @@ ul{
 }
 /*----------*/
 
+.container{
+  width:70%;
+  margin: auto;
+}
+
+.about-us{
+  background:#fff;
+  padding:1.8em;
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.about-us h4{
+  font-size:2.2em;
+  color:#3bcce4;
+  margin-right:0.7em;
+  margin-bottom: 0.5em;
+  font-family: 'Oswald', sans-serif;
+  font-weight:400;
+}
+
+.about-us p{
+  font-family: 'Lato', sans-serif;
+  color:#444;
+  text-align: justify;
+  text-align-last: left;
+  font-size:1.5em;
+  line-height:1.5em;
+  margin-bottom:1.5em;
+}
+
+.about-us div{
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1.5em;
+}
+
+#website-link a{
+  font-weight: 400;
+  color: #3bcce4;
+  outline: none;
+  border: 1px solid #3bcce4;
+  font-size: 1.3em;
+  padding: 0.4em 0.8em;
+  background: transparent;
+  text-decoration: none;
+  transition: 0.7s all;
+  -webkit-transition: 0.7s all;
+  -moz-transition: 0.7s all;
+  -o-transition: 0.7s all;
+  -ms-transition: 0.7s all;
+}
+
+#website-link a:hover{
+  border: 1px solid #3bcce4;
+  background:#3bcce4;
+  color:#fff;
+}
+
 #banner{
-  height: 23em;
+  height: 18em;
   background-image: url("../images/banner 5.jpg");
   background-size: cover;
   background-position: center;

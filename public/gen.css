@@ -22,6 +22,10 @@ ul{
   padding: 0;
 }
 
+i{
+  padding-left: 15px;
+}
+
 .navbar{
   position: absolute;
   bottom: 0px;
@@ -55,18 +59,18 @@ ul{
   border-top: 6px solid #3bcce4;
 }
 
-.post-info{
+.post-intro{
   background:#fff;
   padding:1.8em;
 }
 
-.post-info h4{
+.post-intro h4{
   color:#afafaf;
   font-family: 'Lato', sans-serif;
   font-size:0.8em;
   margin-bottom:1em;
 }
-.post-info h4 a{
+.post-intro h4 a{
   font-size:2em;
   color:#00bcd4;
   margin-right:0.7em;
@@ -76,31 +80,31 @@ ul{
   font-family: 'Oswald', sans-serif;
   font-weight:400;
 }
-.post-info h4 a:hover{
+.post-intro h4 a:hover{
   color: #4a5054;
 }
-.post-info p{
+.post-intro p{
   font-family: 'Lato', sans-serif;
   color:#777;
   font-size:1em;
   line-height:1.5em;
   margin-bottom:1em;
 }
-.post-info a span {
+.post-intro a span {
   background: url("../images/arrow.png") no-repeat 0px 3px;
   height: 18px;
   width: 15px;
   display: inline-block;
   margin-right: 7px;
 }
-.post-info a {
+.post-intro a {
   color: #626465;
   font-weight: 400;
   font-size: 1em;
   display: inline-block;
   text-decoration: none;
 }
-.post-info a:hover{
+.post-intro a:hover{
   color:#00bcd4;
 }
 
@@ -113,7 +117,7 @@ ul{
 }
 
 /*-----Shadow effect-----*/
-.post-info:before, .post-info:after
+.post-intro:before, .post-intro:after
 {
   z-index: -1;
   position: absolute;
@@ -133,7 +137,7 @@ ul{
   -ms-transform: rotate(-3deg);
   transform: rotate(-3deg);
 }
-.post-info:after
+.post-intro:after
 {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
@@ -239,7 +243,6 @@ ul{
 .author-info-page{
   text-align: center;
   margin: auto;
-  margin-bottom: 1.5em;
 }
 
 .author-info-page h4{
@@ -256,10 +259,63 @@ ul{
 }
 
 .author-info-page h5{
-  padding-top: 1em;
+  padding-top: 1.5em;
   color: #00bcd4;
   font-weight: 400;
   font-size: 1.3em;
+}
+
+
+.posts-wrapper{
+  width: 80%;
+  margin: auto;
+  padding: 20px 10px 0px 10px;
+}
+
+.fadeInRight{
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.post{
+  padding: 15px 30px;
+  border-top: 1.5px solid #e7eaec;
+  text-align: left;
+}
+
+.post h4{
+  color:#999;
+  font-family: 'Lato', sans-serif;
+  font-size:0.9em;
+}
+
+.post h4 a{
+  font-size:1.5em;
+  color:#00bcd4;
+  margin-right:0.7em;
+  display:inline-block;
+  text-decoration:none;
+  text-transform: uppercase;;
+  font-family: 'Oswald', sans-serif;
+  font-weight:400;
+}
+.post h4 a:hover{
+  color: #4a5054;
+}
+
+.post p{
+  font-family: 'Lato', sans-serif;
+  color:#333;
+  font-size:1em;
+  line-height:1.5em;
+  margin-bottom:0.5em;
 }
 
 #website-link a{
@@ -297,4 +353,18 @@ ul{
 #wrapper{
   background-image: url("../images/bg01.png");
   background-color: rgb(247, 247, 247);
+}
+
+@keyframes fadeInRight {
+  0% {
+      opacity: 0;
+      -webkit-transform: translate3d(100%,0,0);
+      transform: translate3d(100%,0,0);
+  }
+
+  100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+  }
 }

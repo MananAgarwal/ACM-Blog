@@ -13,7 +13,20 @@ title: Author
       <p>Sophomore at BITS Pilani<br>
          Dual Degree M.Sc (Hons) Physics and B.E. Computer Science<br>
          Graphic Designer and Frontend developer at ACM BITS Pilani</p>
-      <h5>POSTS</h5>   
+      <h5>POSTS</h5>
+
+      <div class="posts-wrapper animated fadeInRight">
+         {% for post in site.posts%}
+            <div class="post">
+                <h4><a href=""> {{ post.title }} </a>
+                     <i class="fa fa-clock-o"></i> {{ post.date | date: "%-d %b %Y" }}
+                     <i class="fa fa-user"></i> {{ post.author }}
+                </h4>
+                <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis.</p>
+            </div>
+         {% endfor %}
+      </div>
+
     </div>
   </div>
 </div>

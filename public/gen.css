@@ -5,7 +5,6 @@ html,body,section{
   background-color: #ffffff;
   font-family: 'Oswald', sans-serif;
   font-size: 100%;
-
 }
 
 h1,h2,h3,h4,h5,h6,p{
@@ -151,6 +150,12 @@ ul{
   margin: auto;
 }
 
+.container-authors{
+  width:70%;
+  margin: auto;
+  margin-top: 5.5em;
+}
+
 .heading{
   font-size:2.2em;
   color:#3bcce4;
@@ -212,6 +217,22 @@ ul{
   color: #313131;
 }
 
+.profile-pic{
+  width: 100%;
+  margin: auto;
+  margin-bottom: -60px;
+  padding: 0;
+  position: relative;;
+  top: -65px;
+}
+
+.profile-pic img{
+  max-width: 20%;
+  border-radius: 50%;
+  border: 5px solid #3bcce4;
+  margin: 0;
+  padding: 0;
+}
 
 .author-info-page{
   text-align: center;
@@ -220,12 +241,24 @@ ul{
 }
 
 .author-info-page h4{
-  font: 400 28px/1.8 Lato, sans-serif;
+  font: 400 32px/1.8 Lato, sans-serif;
   color: #00bcd4;
-  margin-right: 1em;
   text-decoration: none;
 }
 
+.author-info-page p{
+  font: 300 20px/1.8 Lato, sans-serif;
+  line-height: 1.4em;
+  padding: 0.5em 0;
+  color: #313131;
+}
+
+.author-info-page h5{
+  padding-top: 1em;
+  color: #00bcd4;
+  font-weight: 400;
+  font-size: 1.3em;
+}
 
 #website-link a{
   font-weight: 400;

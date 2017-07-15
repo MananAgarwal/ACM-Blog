@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2017-07-12 12:06:43 +0530
-categories: python
+tags: python
 author: Manan
 month: July
 ---

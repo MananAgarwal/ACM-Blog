@@ -1,0 +1,29 @@
+---
+layout: default
+title: Posts
+---
+
+<div class="container">
+  <div class="inner-container posts">
+
+
+    <div class="switch">
+      <h3><a href="{{ site.baseurl }}/posts_chro" id="chronological">Chronological</a></h3>
+      <h2>|</h2>
+      <h3><a href="{{ site.baseurl }}/posts_cat">Categories</a></h3>
+    </div>
+
+    {% assign monthSetter = "foo" %}
+    {% for post in site.posts%}
+      {% if monthSetter != post.month %}
+        {% assign monthSetter = post.month %}
+        <h4>{{monthSetter}} {{ post.date | date: "%Y" }}</h4>
+      {% endif %}
+
+          {% include post.html%}
+
+      {% endfor %}
+
+  </div>
+</div>
+<br>

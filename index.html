@@ -3,25 +3,21 @@ layout: default
 title: Home
 ---
 
+{% for post in site.posts limit:10%}
+
+<div class="animated fadeInRight">
+
   <div class="content-grid-info">
 		 <div class="post-intro">
-		 <h4><a href="">Lorem ipsum dolor sit amet</a>  July 30, 2014 / 27 Comments</h4>
-		 <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis.</p>
-		 <a href="single.html"><span></span>READ MORE</a>
+        <h4><a href=""> {{ post.title }} </a>
+           <i class="fa fa-clock-o"></i> {{ post.date | date: "%-d %b %Y" }}
+           <i class="fa fa-user"></i> {{ post.author }}
+        </h4>
+		    <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis.</p>
+		    <a href=""><span></span>READ MORE</a>
 		 </div>
 	 </div>
-	 <div class="content-grid-info">
-		 <div class="post-intro">
-		 <h4><a href="">Lorem ipsum dolor sit amet</a>  July 30, 2014 / 27 Comments</h4>
-		 <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis.</p>
-		 <a href="single.html"><span></span>READ MORE</a>
-		 </div>
-	 </div>
-	 <div class="content-grid-info">
-		 <div class="post-intro">
-		 <h4><a href="">Lorem ipsum dolor sit amet</a>  July 30, 2014 / 27 Comments</h4>
-		 <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis.</p>
-		 <a href="single.html"><span></span>READ MORE</a>
-		 </div>
-	 </div>
-   <br>
+
+</div>
+{% endfor %}
+<br>

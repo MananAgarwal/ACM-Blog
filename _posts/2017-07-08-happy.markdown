@@ -2,7 +2,7 @@
 layout: post
 title:  "Happy!"
 date:   2017-07-12 12:06:43 +0530
-categories: Graphic Designing
+tags: [Graphic Designing, python]
 author: Manan Agarwal
 month: July
 ---

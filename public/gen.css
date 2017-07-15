@@ -266,11 +266,13 @@ i{
 }
 
 
-
 .switch{
-    text-align: center;
+  text-align: center;
 }
-.switch h3,h2{
+.switch h2,h3{
+  display:inline-block !important;
+}
+.switch h3 a{
   display:inline-block !important;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
@@ -278,16 +280,23 @@ i{
   color:#3bcce4;
   font-style: italic;
   margin: 0.3em 0;
+  text-decoration: none;
 }
-.switch h2{
-  padding: 0 0.4em;
-  font-style: normal;
-  color: #999;
-}
-
-.switch h3:hover{
+.switch h3 a:hover{
   font-weight: 400;
   cursor: default;
+}
+.switch h2{
+  display:inline-block !important;
+  padding: 0 0.4em;
+  color: #999;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size:2em;
+  font-style: normal;
+}
+#chronological, #categories{
+  font-weight: 400;
 }
 
 
@@ -327,11 +336,13 @@ i{
   color:#999;
   font-family: 'Lato', sans-serif;
   font-size:0.9em;
+  font-weight: 400;
+  margin: 0;
 }
 
 .post h4 a{
   font-size:1.5em;
-  color:#00bcd4;
+  color:#3bcce4;
   margin-right:0.7em;
   display:inline-block;
   text-decoration:none;

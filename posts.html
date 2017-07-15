@@ -12,18 +12,23 @@ title: Posts
       <h3 id="categories" onclick="selected(categories)">Categories</h3>
     </div>
 
-    <h4>July 2017</h4>
-    <div class="posts-wrapper animated fadeInRight">
-     {% for post in site.posts%}
-        <div class="post">
-            <h4><a href=""> {{ post.title }} </a>
-                 <i class="fa fa-clock-o"></i> {{ post.date | date: "%-d %b %Y" }}
-                 <i class="fa fa-user"></i> {{ post.author }}
-            </h4>
-            <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis.</p>
-        </div>
-     {% endfor %}
-    </div>
+    {% assign monthSetter = "foo" %}
+    {% for post in site.posts%}
+      {% if monthSetter != post.month %}
+        {% assign monthSetter = post.month %}
+        <h4>{{monthSetter}} {{ post.date | date: "%Y" }}</h4>
+      {% endif %}
+      <div class="posts-wrapper animated fadeInRight">
+          <div class="post">
+              <h4><a href=""> {{ post.title }} </a>
+                  <i class="fa fa-clock-o"></i> {{ post.date | date: "%-d %b %Y" }}
+                  <i class="fa fa-user"></i> {{ post.author }}
+              </h4>
+              <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis.</p>
+          </div>
+      </div>
+    {% endfor %}
+
 
     <script>
     function selected(elmnt) {
@@ -33,7 +38,6 @@ title: Posts
      else if(elmnt == categories)
         {elmnt.style.fontWeight = 400;
          chronological.style.fontWeight = 300;}
-
     }
     </script>
 

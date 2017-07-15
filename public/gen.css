@@ -170,7 +170,7 @@ i{
 }
 
 
-.about-us, .authors{
+.about-us, .inner-container{
   background:#fff;
   padding:1.8em;
   position: relative;
@@ -266,6 +266,39 @@ i{
 }
 
 
+
+.switch{
+    text-align: center;
+}
+.switch h3,h2{
+  display:inline-block !important;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size:2em;
+  color:#3bcce4;
+  font-style: italic;
+  margin: 0.3em 0;
+}
+.switch h2{
+  padding: 0 0.4em;
+  font-style: normal;
+  color: #999;
+}
+
+.switch h3:hover{
+  font-weight: 400;
+  cursor: default;
+}
+
+
+.posts h4{
+    font-size:1.5em;
+    color:#3bcce4;
+    margin: 0.8em 0 0 1em;
+    font-family: 'Oswald', sans-serif;
+    font-weight:400;
+}
+
 .posts-wrapper{
   width: 80%;
   margin: auto;
@@ -312,7 +345,7 @@ i{
 
 .post p{
   font-family: 'Lato', sans-serif;
-  color:#333;
+  color:#555;
   font-size:1em;
   line-height:1.5em;
   margin-bottom:0.5em;

@@ -1,0 +1,42 @@
+---
+layout: default
+title: Posts
+---
+
+<div class="container">
+  <div class="inner-container posts">
+
+    <div class="switch">
+      <h3 id="chronological" onclick="selected(chronological)">Chronological</h3>
+      <h2>|</h2>
+      <h3 id="categories" onclick="selected(categories)">Categories</h3>
+    </div>
+
+    <h4>July 2017</h4>
+    <div class="posts-wrapper animated fadeInRight">
+     {% for post in site.posts%}
+        <div class="post">
+            <h4><a href=""> {{ post.title }} </a>
+                 <i class="fa fa-clock-o"></i> {{ post.date | date: "%-d %b %Y" }}
+                 <i class="fa fa-user"></i> {{ post.author }}
+            </h4>
+            <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis.</p>
+        </div>
+     {% endfor %}
+    </div>
+
+    <script>
+    function selected(elmnt) {
+      if(elmnt == chronological)
+        {elmnt.style.fontWeight = 400;
+         categories.style.fontWeight = 300;}
+     else if(elmnt == categories)
+        {elmnt.style.fontWeight = 400;
+         chronological.style.fontWeight = 300;}
+
+    }
+    </script>
+
+  </div>
+</div>
+<br>

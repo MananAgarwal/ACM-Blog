@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="inner-container post-page">
+    <h4 class="heading">{{ page.title }}</h4>
+    <h5><i class="fa fa-clock-o"></i> {{ page.date | date: "%-d %b %Y" }} | Written by
+        <i class="fa fa-user"></i> {{ page.author }}</h5>
+
+    {{ content }}
+
+  </div>
+</div>
+<br>

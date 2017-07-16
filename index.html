@@ -9,12 +9,16 @@ title: Home
 
   <div class="content-grid-info">
 		 <div class="post-intro">
-        <h4><a href=""> {{ post.title }} </a>
+        <h4><a href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a>
            <i class="fa fa-clock-o"></i> {{ post.date | date: "%-d %b %Y" }}
            <i class="fa fa-user"></i> {{ post.author }}
         </h4>
-		    <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis.</p>
-		    <a href=""><span></span>READ MORE</a>
+		    <p>{% if post.desc.size > 0 %}
+                {{ post.desc }}
+            {% else %}
+                {{ post.excerpt | strip_html | xml_escape | truncatewords: 50 }}
+            {% endif %}</p>
+		    <a href="{{ post.url | prepend: site.baseurl }}"><span></span>READ MORE</a>
 		 </div>
 	 </div>
 

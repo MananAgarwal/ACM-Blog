@@ -59,18 +59,14 @@ i{
   border-top: 6px solid #3bcce4;
 }
 
+
+/*posts css for the "HOME" page*/
 .post-intro{
   background:#fff;
   padding:1.8em;
 }
 
-.post-intro h4{
-  color:#afafaf;
-  font-family: 'Lato', sans-serif;
-  font-size:0.8em;
-  margin-bottom:1em;
-}
-.post-intro h4 a{
+#post-title{
   font-size:2em;
   color:#00bcd4;
   margin-right:0.7em;
@@ -80,8 +76,18 @@ i{
   font-family: 'Oswald', sans-serif;
   font-weight:400;
 }
-.post-intro h4 a:hover{
+#post-title:hover{
   color: #4a5054;
+}
+#post-details{
+  color:#afafaf;
+  font-family: 'Lato', sans-serif;
+  font-size:0.8em;
+  margin-bottom:1em;
+  cursor: default;
+}
+#post-details:hover{
+  color:#777;
 }
 .post-intro p{
   font-family: 'Lato', sans-serif;
@@ -245,7 +251,7 @@ i{
   margin: auto;
 }
 
-.author-info-page h4{
+.author-info-page h3{
   font: 400 32px/1.8 Lato, sans-serif;
   color: #00bcd4;
   text-decoration: none;
@@ -300,7 +306,7 @@ i{
 }
 
 
-.posts h4{
+#posts-broad-headings{
     font-size:1.5em;
     color:#3bcce4;
     margin: 1.5em 0 0 1.8em;
@@ -326,21 +332,28 @@ i{
   animation-fill-mode: both;
 }
 
+
+/*posts css for "POSTS" page*/
 .post{
   padding: 15px 30px;
   border-top: 1.5px solid #e7eaec;
   text-align: left;
 }
 
-.post h4{
+#post-post-details{
   color:#999;
   font-family: 'Lato', sans-serif;
   font-size:0.9em;
   font-weight: 400;
   margin: 0;
+  text-decoration: none;
+}
+#post-post-details:hover{
+  cursor: default;
+  color:#555;
 }
 
-.post h4 a{
+#post-post-title{
   font-size:1.5em;
   color:#3bcce4;
   margin-right:0.7em;
@@ -350,7 +363,7 @@ i{
   font-family: 'Oswald', sans-serif;
   font-weight:400;
 }
-.post h4 a:hover{
+#post-post-title:hover{
   color: #4a5054;
 }
 

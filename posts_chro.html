@@ -16,7 +16,7 @@ title: Posts
     {% for post in site.posts%}
       {% if monthSetter != post.month %}
         {% assign monthSetter = post.month %}
-        <h4>{{monthSetter}} {{ post.date | date: "%Y" }}</h4>
+        <h4 id="posts-broad-headings">{{monthSetter}} {{ post.date | date: "%Y" }}</h4>
       {% endif %}
 
           {% include post.html%}

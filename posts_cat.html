@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Posts
+permalink: /posts/categories/
 ---
 
 <div class="container">
@@ -8,9 +9,9 @@ title: Posts
 
 
     <div class="switch">
-      <h3><a href="{{ site.baseurl }}/posts_chro">Chronological</a></h3>
+      <h3><a href="{{ site.baseurl }}/posts/chronological/">Chronological</a></h3>
       <h2>|</h2>
-      <h3><a href="{{ site.baseurl }}/posts_cat" id="categories">Categories</a></h3>
+      <h3><a href="{{ site.baseurl }}//posts/categories/" id="categories">Categories</a></h3>
     </div>
 
 
@@ -21,7 +22,7 @@ title: Posts
 
     {% for item in (0..site.tags.size) %}{% unless forloop.last %}
       {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
-      <h4>{{ this_word }}</h4>
+      <h4 id="posts-broad-headings">{{ this_word }}</h4>
       {% for post in site.tags[this_word] %}{% if post.title != null %}
 
           {% include post.html%}

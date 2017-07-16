@@ -3,7 +3,7 @@ layout: post-layout
 title:  "Jekyll!"
 date:   2017-06-12 12:40:55 +0530
 tags: C++
-author: Manan A
+author: Manan Agarwal
 month: June
 desc: Hurry this is working
 ---

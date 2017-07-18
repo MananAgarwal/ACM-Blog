@@ -59,7 +59,35 @@ i{
   border-top: 6px solid #3bcce4;
 }
 
+.loader-wrapper{
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  width:100%;
+  height: 100%;
+  z-index: 9998;
+  background:#fff;
+}
 
+.loader{
+  position: fixed;
+  left: 45%;
+  top: 35%;
+  z-index: 9999;
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3bcce4;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  -webkit-animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
 /*posts css for the "HOME" page*/
 .post-intro{
   background:#fff;

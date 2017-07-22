@@ -3,7 +3,7 @@ html,body,section{
   padding: 0;
   border: 0;
   background-color: #ffffff;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 100%;
 }
 
@@ -95,13 +95,13 @@ i{
 }
 
 #post-title{
-  font-size:2em;
+  font-size:1.9em;
   color:#00bcd4;
   margin-right:0.7em;
   display:inline-block;
   text-decoration:none;
   text-transform: uppercase;;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight:400;
 }
 #post-title:hover{
@@ -109,7 +109,7 @@ i{
 }
 #post-details{
   color:#afafaf;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size:0.8em;
   margin-bottom:1em;
   cursor: default;
@@ -118,7 +118,7 @@ i{
   color:#777;
 }
 .post-intro p{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color:#777;
   font-size:1em;
   line-height:1.5em;
@@ -137,6 +137,7 @@ i{
   font-size: 1em;
   display: inline-block;
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
 }
 .post-intro a:hover{
   color:#00bcd4;
@@ -199,7 +200,7 @@ i{
   color:#3bcce4;
   margin-right:0.7em;
   margin-bottom: 0.5em;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight:400;
 }
 
@@ -212,8 +213,8 @@ i{
 }
 
 .about-us p{
-  font-family: 'Lato', sans-serif;
-  color:#444;
+  font-family: 'Roboto', sans-serif;
+  color:#333;
   text-align: justify;
   text-align-last: left;
   font-size:1.5em;
@@ -247,6 +248,7 @@ i{
 
 .single-author h4{
   color: #afafaf;
+  font-family: 'Roboto',sans-serif;
   font-weight: 400;
 }
 
@@ -335,11 +337,13 @@ i{
 
 
 #posts-broad-headings{
-    font-size:1.5em;
+  /*categories heading i.e. the date and the tags*/
+    font-size:1.8em;
     color:#3bcce4;
     margin: 1.5em 0 0 1.8em;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight:400;
+    text-transform: capitalize;
 }
 
 .posts-wrapper{
@@ -370,7 +374,7 @@ i{
 
 #post-post-details{
   color:#999;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size:0.9em;
   font-weight: 400;
   margin: 0;
@@ -387,8 +391,8 @@ i{
   margin-right:0.7em;
   display:inline-block;
   text-decoration:none;
-  text-transform: uppercase;;
-  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
   font-weight:400;
 }
 #post-post-title:hover{
@@ -396,8 +400,8 @@ i{
 }
 
 .post p{
-  font-family: 'Lato', sans-serif;
-  color:#555;
+  font-family: 'Roboto', sans-serif;
+  color:#666;
   font-size:1em;
   line-height:1.5em;
   margin-top: 0.3em;
@@ -406,7 +410,7 @@ i{
 
 
 .post-page{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color:#444;
   text-align: justify;
   text-align-last: left;
@@ -622,4 +626,8 @@ tbody tr:nth-child(odd) th {
 .css .o,
 .css .o + .nt,
 .css .nt + .nt { color: #999; }
+
+strong, b{
+  font-weight: 500 !important;
+}
 /*----------------------------*/

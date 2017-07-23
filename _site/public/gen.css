@@ -32,6 +32,15 @@ i{
   width: 100%;
   color: rgb(255, 255, 255);
   background-color: rgba(27, 27, 27, 0.7);
+  z-index: 9997;
+}
+
+.navbar-fixed-top{
+  position: fixed !important;
+  top: 0px;
+  left: 0px;
+  bottom: inherit;
+  background-color: rgba(27, 27, 27, 0.75);
 }
 
 .navbar li{

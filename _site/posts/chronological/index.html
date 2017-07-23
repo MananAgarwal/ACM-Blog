@@ -131,6 +131,22 @@
 
     </div>
 
+    <script>
+var navbarTop = $('.navbar').offset().top; // Get initial position
+$(window).scroll(function() {            // Assign scroll event listener
+var currentScroll = $(window).scrollTop(); // Get current position
+
+  if (currentScroll >= navbarTop){
+    $('.navbar').addClass('navbar-fixed-top');
+  }
+  else {
+    $('.navbar').removeClass('navbar-fixed-top');
+  }
+
+});
+</script>
+
+
     <!-- if statement is to prevent Google Analytics from counting localhost visits-->
     <!-- Github Pages automatically sets dev Env to production on hosting -->
     

@@ -119,7 +119,7 @@ i{
 }
 .post-intro p{
   font-family: 'Roboto', sans-serif;
-  color:#777;
+  color:#666;
   font-size:1em;
   line-height:1.5em;
   margin-bottom:1em;
@@ -401,7 +401,7 @@ i{
 
 .post p{
   font-family: 'Roboto', sans-serif;
-  color:#666;
+  color:#555;
   font-size:1em;
   line-height:1.5em;
   margin-top: 0.3em;
@@ -411,7 +411,7 @@ i{
 
 .post-page{
   font-family: 'Roboto', sans-serif;
-  color:#444;
+  color:#3f3f3f;
   text-align: justify;
   text-align-last: left;
   font-size:1.3em;

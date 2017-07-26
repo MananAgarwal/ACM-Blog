@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head prefix="og: http://ogp.me/ns#">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Open graph tags and twitter tags-->
+  <meta property="og:url" content="http://localhost:4000/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Home" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="http://localhost:4000/images/banner 5.jpg" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/gen.css">
+
+  <!--icons i.e. font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- webfonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet"  type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic' rel='stylesheet' type='text/css'>
+  <title> Home </title>
+
+  <!-- fevicon -->
+  <link rel="shortcut icon" type="image/png" href="/images/fevicon.png">
+
+  <!-- jquery for loader -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+       $(".loader-wrapper").fadeOut("fast");
+     })
+  </script>
+
+</head>
+
+
+  <body>
+    <div id="wrapper">
+      <section id="banner">
+    <!-- Navbar -->
+    <div class="navbar">
+  <ul>
+    <li  class="active"  ><a href="/">Home</a></li>
+    <li  ><a href="/posts/chronological/">Posts</a></li>
+    <li  ><a href="/authors/">Authors</a></li>
+    <li  ><a href="/about/">About us</a></li>
+  </ul>
+</div>
+
+</section>
+
+      <div class="loader-wrapper"><div class="loader"></div></div>
+
+
+<div class="animated fadeInRight">
+
+  <div class="content-grid-info">
+		 <div class="post-intro">
+        <h4><a id="post-title" href="/posts/12-07-2017/welcome-to-jekyll/"> Welcome to Jekyll! </a>
+           <a href= "/posts/chronological/" id="post-details"><i class="fa fa-clock-o"></i> 12 Jul 2017</a>
+           <a href= "/Shyamal Vaderia/" id="post-details"> <i class="fa fa-user"></i> Shyamal Vaderia</a>
+           <a href= "/posts/categories/" id="post-details"><i class="fa fa-tags"></i> python </a>
+        </h4>
+		    <p>
+                You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...
+            </p>
+		    <a href="/posts/12-07-2017/welcome-to-jekyll/"><span></span>READ MORE</a>
+		 </div>
+	 </div>
+
+</div>
+
+
+<div class="animated fadeInRight">
+
+  <div class="content-grid-info">
+		 <div class="post-intro">
+        <h4><a id="post-title" href="/posts/12-07-2017/happy/"> Happy! </a>
+           <a href= "/posts/chronological/" id="post-details"><i class="fa fa-clock-o"></i> 12 Jul 2017</a>
+           <a href= "/Manan Agarwal/" id="post-details"> <i class="fa fa-user"></i> Manan Agarwal</a>
+           <a href= "/posts/categories/" id="post-details"><i class="fa fa-tags"></i> Graphic Designing , python </a>
+        </h4>
+		    <p>
+                You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...
+            </p>
+		    <a href="/posts/12-07-2017/happy/"><span></span>READ MORE</a>
+		 </div>
+	 </div>
+
+</div>
+
+
+<div class="animated fadeInRight">
+
+  <div class="content-grid-info">
+		 <div class="post-intro">
+        <h4><a id="post-title" href="/posts/12-06-2017/welcome/"> Jekyll! </a>
+           <a href= "/posts/chronological/" id="post-details"><i class="fa fa-clock-o"></i> 12 Jun 2017</a>
+           <a href= "/Manan Agarwal/" id="post-details"> <i class="fa fa-user"></i> Manan Agarwal</a>
+           <a href= "/posts/categories/" id="post-details"><i class="fa fa-tags"></i> C++ </a>
+        </h4>
+		    <p>
+                Hurry this is working
+            </p>
+		    <a href="/posts/12-06-2017/welcome/"><span></span>READ MORE</a>
+		 </div>
+	 </div>
+
+</div>
+
+<br>
+
+    </div>
+
+    <script>
+var navbarTop = $('.navbar').offset().top; // Get initial position
+$(window).scroll(function() {            // Assign scroll event listener
+var currentScroll = $(window).scrollTop(); // Get current position
+
+  if (currentScroll >= navbarTop){
+    $('.navbar').addClass('navbar-fixed-top');
+  }
+  else {
+    $('.navbar').removeClass('navbar-fixed-top');
+  }
+
+});
+</script>
+
+
+    <!-- if statement is to prevent Google Analytics from counting localhost visits-->
+    <!-- Github Pages automatically sets dev Env to production on hosting -->
+    
+  </body>
+
+</html>

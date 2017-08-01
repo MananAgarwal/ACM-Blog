@@ -441,6 +441,12 @@ i{
   font-weight: 300;
 }
 
+.post-page h5 a{
+  color: #999;
+  text-decoration: none;
+  border:none;
+}
+
 .post-page i{
   padding-left: 0;
 }

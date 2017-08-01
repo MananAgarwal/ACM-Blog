@@ -15,9 +15,10 @@ permalink: /posts/chronological/
 
     {% assign monthSetter = "foo" %}
     {% for post in site.posts%}
-      {% if monthSetter != post.month %}
-        {% assign monthSetter = post.month %}
-        <h4 id="posts-broad-headings">{{monthSetter}} {{ post.date | date: "%Y" }}</h4>
+      {% assign post-month = post.date | date: "%B" %}
+      {% if monthSetter != post-month %}
+        {% assign monthSetter = post-month %}
+        <h4 id="posts-broad-headings">{{ post.date | date: "%B %Y" }}</h4>
       {% endif %}
 
           {% include post.html%}
